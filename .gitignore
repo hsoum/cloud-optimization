@@ -1,0 +1,34 @@
+# Compiled workloads: everyone rebuilds them with the go build line in the README
+bin/
+
+# Rust build output, for when the scheduler / orchestrator / analyzer crates arrive
+target/
+
+# Per-machine label used by scripts/benchmark.sh: each teammate writes their own
+.machine
+
+# LaTeX build byproducts: the .tex source and the final .pdf stay tracked
+*.aux
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+results/*_Report.log
+results/*_Report.out
+
+# Backups, editor and OS files
+*.bak
+*~
+*.swp
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+
+# Credentials: keys and service-account files never go into the repository
+.env
+*.pem
+*.key
+*credentials*.json
+*service-account*.json

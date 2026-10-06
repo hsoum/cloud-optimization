@@ -1,0 +1,11 @@
+# Store and check out text files with LF line endings on every machine
+* text=auto eol=lf
+
+# Shell scripts and CSV files break on the VMs with Windows line endings
+*.sh  text eol=lf
+*.csv text eol=lf
+*.go  text eol=lf
+
+# Binary files are never converted
+*.pdf binary
+*.png binary
